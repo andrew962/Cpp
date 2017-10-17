@@ -24,13 +24,13 @@ struct Trabajadores{
 	float sneto; //Variable Secundaria
 }T[20];
 
-int menu(){
+void menu(){
 	for(int j=1;j<=3;j++){
 		for(int i=1;i<=3;i++){
-//			cout<<"Introducir Nombre de Empleado #"<<i<<": ";
-//			cin>>T[i].nombre;
-//			cout<<"Introducir Edad de Empleado #"<<i<<": ";
-//			cin>>T[i].edad;
+			cout<<"Introducir Nombre de Empleado #"<<i<<": ";
+			cin>>T[i].nombre;
+			cout<<"Introducir Edad de Empleado #"<<i<<": ";
+			cin>>T[i].edad;
 			cout<<"Introducir Base de Pago de Empleado #"<<i<<": ";
 			cin>>T[i].pago;
 			cout<<"Introducir Horas de Empleado #"<<i<<": ";
