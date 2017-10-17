@@ -24,9 +24,12 @@ struct Trabajadores{
 }T[20];
 
 void menu(){
-	for(int i=0;i<=20;i++){
+	for(int i=1;i<=5;i++){
 		cout<<"Introducir Nombre de Empleado #"<<i<<": ";
 		cin>>T[i].nombre;
+	}
+	for (int i=1;i<=5;i++){
+		cout<<"Empleado #"<<i<<": "<<T[i].nombre<<endl;
 	}
 }
 
