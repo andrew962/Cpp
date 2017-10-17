@@ -13,6 +13,8 @@ Otras Variables
 Impuestos, Saldo Neto
 */
 
+float calculo(float n1,float n2);
+
 struct Trabajadores{
 	string nombre; //Variable
 	float horas; //Variable
@@ -23,18 +25,25 @@ struct Trabajadores{
 }T[20];
 
 void menu(){
-	for(int i=1;i<=5;i++){
-		cout<<"Introducir Nombre de Empleado #"<<i<<": ";
-		cin>>T[i].nombre;
-		cout<<"Introducir Edad de Empleado #"<<i<<": ";
-		cin>>T[i].edad;
-		cout<<"Introducir Base de Pago de Empleado #"<<i<<": ";
-		cin>>T[i].pago;
-		cout<<"Introducir Horas de Empleado #"<<i<<": ";
-		cin>>T[i].horas;
+	for(int j=1;j<=3;j++){
+		for(int i=1;i<=3;i++){
+			cout<<"Introducir Nombre de Empleado #"<<i<<": ";
+			cin>>T[i].nombre;
+			cout<<"Introducir Edad de Empleado #"<<i<<": ";
+			cin>>T[i].edad;
+			cout<<"Introducir Base de Pago de Empleado #"<<i<<": ";
+			cin>>T[i].pago;
+			cout<<"Introducir Horas de Empleado #"<<i<<": ";
+			cin>>T[i].horas;	
+		}
+		calculo(T[j].pago,T[j].horas);
 	}
-	for (int i=1;i<=5;i++){
-		cout<<"Empleado #"<<i<<": "<<T[i].nombre<<endl;
+}
+
+float calculo(float n1, float n2){
+	for(int i=1;i<=3;i++){
+		cout<<T[i].pago<<endl;
+		cout<<T[i].horas<<endl;
 	}
 }
 
