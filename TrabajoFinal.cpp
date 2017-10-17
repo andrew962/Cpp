@@ -16,8 +16,20 @@ Impuestos, Saldo Neto
 struct Trabajadores{
 	string nombre;
 	float salario;
+	float horas;
+	float pago;
+	float impuestos;
+	float sneto;
+	int edad;
 }T[20];
 
-int main(){
+void menu(){
+	for(int i=0;i<=20;i++){
+		cout<<"Introducir Nombre de Empleado #"<<i<<": ";
+		cin>>T[i].nombre;
+	}
+}
 
+int main(){
+	menu();
 }
